@@ -102,4 +102,9 @@ theme: particlex
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/kai-gt/kai-gt.github.io
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
+
+
