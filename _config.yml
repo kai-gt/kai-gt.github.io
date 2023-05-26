@@ -43,8 +43,10 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
+# particlex主题配置 enable默认为true
 highlight:
-  enable: true
+  enable: false 
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -55,6 +57,17 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+# particlex主题配置
+archive_generator:
+    enabled: true
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false
+pandoc:
+    extra:
+        - no-highlight:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
