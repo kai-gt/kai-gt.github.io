@@ -1,8 +1,65 @@
+
+
+
+
+# ParticleX theme icon is adopts the Font Awesome 6
+# https://fontawesome.com
+
+# Main menu navigation
+menu:
+    主页:
+        name: house
+        theme: solid
+        link: /
+    分类:
+        name: bookmark
+        theme: solid
+        link: /categories
+    标签:
+        name: tags
+        theme: solid
+        link: /tags
+    关于:
+        name: id-card
+        theme: solid
+        link: /about
+    归档:
+        name: box-archive
+        theme: solid
+        link: /archives
+
+# Side info card
+card:
+    enable: true
+    description: |
+        kaiの小窝
+    iconLinks:
+    # friendLinks:
+    #     Argvchs: https://argvchs.github.io
+
+# Footer info
+footer:
+    since: 2023
+    # Customize the server domain name ICP
+    ICP:
+        enable: false
+        code:
+        link:
+
+# Polyfill
+# https://polyfill.io
+polyfill:
+    enable: true
+    features:
+        - default
+
+# Highlight.js
+# https://highlightjs.org
 highlight:
-    enable: false
+    enable: true
+    style: github
 prismjs:
     enable: false
-
 
 archive_generator:
     enabled: true

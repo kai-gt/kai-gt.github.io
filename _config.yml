@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 博客
+title: kaiの小窝
 subtitle: ''
 description: ''
-keywords:
+keywords: 博客 kai的博客
 author: kai
 language: en
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://kai-gt.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
