@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Archives | kaiの小窝</title>
+        <title>about | kaiの小窝</title>
         <meta name="author" content="kai" />
         <meta name="description" content="" />
         <meta name="keywords" content="博客 kai的博客" />
@@ -27,6 +27,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -141,26 +145,31 @@
 
             <transition name="into">
                 <div id="main" v-show="!loading">
-                    
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
+                    <div class="article">
+    <div>
+        <h1>about</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/5/25
+        </span>
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/5/25</div>
-                <a href="/2023/05/25/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h1 id="我的"><a href="#我的" class="headerlink" title="我的"></a>我的</h1>
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
                     <footer id="footer">
@@ -192,6 +201,12 @@
             
         </div>
         <script src="/js/main.js"></script>
+        
+        
+
+
+
+
         
     </body>
 </html>
