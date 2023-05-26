@@ -1,5 +1,14 @@
 
 
+# Avatar image
+avatar: /images/avatar.jpg
+
+# Favicon
+favicon: /images/favicon.jpeg
+
+# Home page background image
+background:
+    - /images/background.jpg
 
 
 # ParticleX theme icon is adopts the Font Awesome 6
