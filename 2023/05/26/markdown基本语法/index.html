@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Archives | kaiの小窝</title>
+        <title>markdown基本语法 | kaiの小窝</title>
         <meta name="author" content="kai" />
         <meta name="description" content="" />
         <meta name="keywords" content="博客 kai的博客" />
@@ -27,6 +27,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -141,26 +145,137 @@
 
             <transition name="into">
                 <div id="main" v-show="!loading">
-                    
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
+                    <div class="article">
+    <div>
+        <h1>markdown基本语法</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/5/26
+        </span>
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/5/25</div>
-                <a href="/2023/05/25/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/markdown/" style="color: #03a9f4">markdown</a>
+            </span>
+            
+        </span>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h2 id="标题-h1-h6"><a href="#标题-h1-h6" class="headerlink" title="标题(h1 - h6)"></a>标题(h1 - h6)</h2><pre><code class="markdown"># h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+</code></pre>
+<hr>
+<h2 id="段落及区块引用-gt"><a href="#段落及区块引用-gt" class="headerlink" title="段落及区块引用( &gt; )"></a>段落及区块引用( &gt; )</h2><pre><code class="markdown">&gt; 这段内容将被高亮...
+</code></pre>
+<blockquote>
+<p>这段内容将被高亮…</p>
+</blockquote>
+<hr>
+<h2 id="插入链接或图片"><a href="#插入链接或图片" class="headerlink" title="插入链接或图片"></a>插入链接或图片</h2><pre><code class="markdown">    [点我去百度](http://www.baidu.com)
+    ![头像](https://avatars.githubusercontent.com/u/68783565?v=4)
+</code></pre>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.baidu.com/">点我去百度</a><br><img src="https://avatars.githubusercontent.com/u/68783565?v=4" alt="头像"></p>
+</blockquote>
+<hr>
+<h2 id="列表-无序-、-、-有序-1"><a href="#列表-无序-、-、-有序-1" class="headerlink" title="列表 无序:(*、+、-) 有序:(1.)"></a>列表 无序:(*、+、-) 有序:(1.)</h2><pre><code class="markdown">1. 无序：
+   * 小明
+   + 小红
+   - 小白
+
+2. 有序:
+   1. 小明
+   2. 小红
+   3. 小白
+</code></pre>
+<ol>
+<li>无序<ul>
+<li>小明</li>
+</ul>
+<ul>
+<li>小红</li>
+</ul>
+<ul>
+<li>小白</li>
+</ul>
+</li>
+<li>有序<ol>
+<li>小明</li>
+<li>小红</li>
+<li>小白</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><pre><code class="markdown">---
+上下两个都为分割线
+***
+</code></pre>
+<hr>
+<p>上下两个都为分割线</p>
+<hr>
+<h3 id="强调-加粗或者斜体"><a href="#强调-加粗或者斜体" class="headerlink" title="强调 (加粗或者斜体)"></a>强调 (加粗或者斜体)</h3><pre><code class="markdown">*斜体*
+_斜体_
+
+**加粗**
+__加粗__
+</code></pre>
+<blockquote>
+<p><em>斜体</em><br><em>斜体</em><br><strong>加粗</strong><br><strong>加粗</strong></p>
+</blockquote>
+<hr>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><pre><code class="markdown">   \```(语言)
+    console.log(&#39;hello word!&#39;)  \ 为转义
+   \```
+</code></pre>
+<pre><code class="js">console.log(&#39;hello word!&#39;)
+</code></pre>
+<h3 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h3><blockquote>
+<p>两端均有冒号(居中) 左边有(居左) 右边有(居右)</p>
+</blockquote>
+<pre><code class="markdown">表头一|表头二|表头三
+:---|---:|:---:
+项目1|项目2|项目3
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">表头一</th>
+<th align="right">表头二</th>
+<th align="center">表头三</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">项目1</td>
+<td align="right">项目2</td>
+<td align="center">项目3</td>
+</tr>
+</tbody></table>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
                     <footer id="footer">
@@ -173,10 +288,10 @@
             </span>
             &commat;kai
         </div>
-        <!-- <div>
+        <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
             <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
-        </div> -->
+        </div>
         
     </div>
 </footer>
@@ -192,6 +307,12 @@
             
         </div>
         <script src="/js/main.js"></script>
+        
+        
+
+
+
+
         
     </body>
 </html>
